@@ -37,13 +37,13 @@ Goal: a running FastAPI service with a migrated Supabase schema.
 - [ ] Init backend deps and project layout ([backend-setup](guides/backend-setup.md))
 - [x] `app/config.py` — settings module, fail fast on missing env vars
 - [x] `app/main.py` — FastAPI app, CORS, health check (`GET /health`)
-- [ ] SQLAlchemy models in `app/database/models/`:
-  - [ ] `users`
-  - [ ] `source_documents`
-  - [ ] `document_chunks` (embedding + generated `tsvector`)
-  - [ ] `chat_threads`
-  - [ ] `chat_messages`
-  - [ ] `message_citations`
+- [x] SQLAlchemy models in `app/database/models/`:
+  - [x] `users`
+  - [x] `source_documents`
+  - [x] `document_chunks` (embedding + generated `tsvector`)
+  - [x] `chat_threads`
+  - [x] `chat_messages`
+  - [x] `message_citations`
 - [ ] Alembic init + first migration:
   - [ ] `create extension if not exists vector`
   - [ ] `vector(1536)` embedding column
